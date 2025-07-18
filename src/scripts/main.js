@@ -54,7 +54,7 @@ function giveAdvice() {
   });
 
   resultFirstPromise.catch((rejectMessage) => {
-    createNotification(rejectMessage, 'error');
+    createNotification(rejectMessage.message, 'error');
   });
 
   resultSecondPromise.then((resolveMessage) => {
